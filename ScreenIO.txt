@@ -1,0 +1,22 @@
+**************************************************
+*  PROGRAMMED BY : Stanley Ferguson and Stephen Braudo
+*  CLASS         : CS1A
+*  SECTION       : MW: 8:00a
+*  LAB #13       : Output - Geometry
+**************************************************
+
+Enter the height of the triangle:  12.345
+Enter the base of the triangle:    15.23
+
+Enter the width of the rectangle:  17.32
+Enter the height of the rectangle: 25
+
+Enter the radius of the circle:    35
+
+
+     TRIANGLE AREA     RECTANGLE AREA     CIRCLE AREA
+           94.0072                433         3848.45
+                94                433       3.85e+003
+              94.0               433.       3.85e+003
+            94.007            433.000        3848.448
+          94.00717          433.00000      3848.44800
