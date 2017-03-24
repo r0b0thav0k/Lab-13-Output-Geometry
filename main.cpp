@@ -1,6 +1,6 @@
 /*****************************************************************************
- * AUTHOR	  : Stanley Ferguson and Stephen Braudo
- * STUDENT ID : 1052330 and 1053220
+ * AUTHOR	  : 
+ * STUDENT ID     :  
  * LAB #13	  : Output - Geometry
  * CLASS	  : CS1A
  * SECTION	  : MW: 8am
@@ -45,7 +45,7 @@ using namespace std;
  * 	  	rectangleWidth	: the width of the rectangle
  * 	  	rectangleHeight	: the height of the rectangle
  *
- *    *************
+ *    	  *************
  * 	  *** set 3 ***
  * 	  *************
  * 	  	circleRadius	: the radius of the circle
@@ -54,8 +54,8 @@ using namespace std;
  * 	This program will output the program heading and the triangle area,
  * 	rectangle area,and circle area
  * 		triangleArea 	    : the area of the triangle
- * 		rectangleArea		: the area of the rectangle
- * 		circleArea			: the area of the circle
+ * 		rectangleArea	    : the area of the rectangle
+ * 		circleArea	    : the area of the circle
  *
  ****************************************************************************/
 
@@ -81,37 +81,37 @@ int main()
 	 * CIRCLE_AREA_COL    : the column for area of the circle
 	 *
 	 ************************************************************************/
-	const char PROGRAMMER[] = "Stanley Ferguson and Stephen Braudo";
-	const char CLASS[]		= "CS1A";
+	const char PROGRAMMER[] = " ";
+	const char CLASS[]	= "CS1A";
 	const char SECTION[]	= "MW: 8:00a";
-	const int  LAB_NUM		= 13;
+	const int  LAB_NUM	= 13;
 	const char LAB_NAME[]	= "Output - Geometry";
-	const float PI 			= 3.14159;
+	const float PI 		= 3.14159;
 
 	const int PROMPT_COL         = 35;
 	const int TRIANGLE_AREA_COL  = 18;
 	const int RECTANGLE_AREA_COL = 19;
 	const int CIRCLE_AREA_COL    = 16;
 
-	float triangleHeight;      // IN         - Set 1: triangle height
-	float triangleBase;        // IN         - Set 1: triangle base
-	float triangleArea;        // CALC & OUT - Set 1: triangle area
+	float triangleHeight;      // INPUT & CALC - Set 1: triangle height
+	float triangleBase;        // INPUT & CALC - Set 1: triangle base
+	float triangleArea;        // CALC & OUT   - Set 1: triangle area
 
-	float rectangleWidth;      // IN		 - Set 2: rectangle width
-	float rectangleHeight;	   // IN		 - Set 2: rectangle height
-	float rectangleArea;	   // CALC & OUT - Set 2: rectangle area
+	float rectangleWidth;      // INPUT & CALC - Set 2: rectangle width
+	float rectangleHeight;	   // INPUT & CALC - Set 2: rectangle height
+	float rectangleArea;	   // CALC & OUT   - Set 2: rectangle area
 
-	float circleRadius;		   // IN		 - Set 3: circle radius
-	float circleArea;		   // CALC & OUT - Set 3: circle area
+	float circleRadius;	   // INPUT & CALC - Set 3: circle radius
+	float circleArea;	   // CALC & OUT   - Set 3: circle area
 
 	// OUTPUT - Class Heading
 	cout << left;
-	cout << "**************************************************\n";
+	cout << "********************************************************\n";
 	cout << "*  PROGRAMMED BY : "  << PROGRAMMER << endl;
-	cout << "*  "	   << setw(14) << "CLASS"	 << ": " << CLASS    << endl;
+	cout << "*  "	   << setw(14) << "CLASS"    << ": " << CLASS    << endl;
 	cout << "*  "	   << setw(14) << "SECTION"  << ": " << SECTION  << endl;
-	cout << "*  LAB #" << setw(9)  << LAB_NUM	 << ": " << LAB_NAME << endl;
-	cout << "**************************************************\n\n";
+	cout << "*  LAB #" << setw(9)  << LAB_NUM    << ": " << LAB_NAME << endl;
+	cout << "********************************************************\n\n";
 	cout << right;
 
 	/************************************************************************
@@ -174,11 +174,11 @@ int main()
 	 * 			Set 3: output the area of the circle
 	 *
 	 * 			TRIANGLE AREA     RECTANGLE AREA     CIRCLE AREA
-	 *				  94.0072                433		 3848.45
-	 *				       94                433	   3.85e+003
-	 *				     94.0			    433.	   3.85e+003
-	 *				   94.007			 433.000	    3848.448
-	 *				 94.00717		   433.00000	  3848.44800
+	 *			      94.0072                433	 3848.45
+	 *				   94                433       3.85e+003
+	 *				 94.0	            433.       3.85e+003
+	 *			       94.007	         433.000	3848.448
+	 *			     94.00717	       433.00000      3848.44800
 	 ************************************************************************/
 
 	/************************************************************************
@@ -190,36 +190,36 @@ int main()
 	cout << setw(TRIANGLE_AREA_COL)  << "TRIANGLE AREA";
 	cout << setw(RECTANGLE_AREA_COL) << "RECTANGLE AREA";
 	cout << setw(CIRCLE_AREA_COL)    << "CIRCLE AREA";
-    cout << left << endl;
+        cout << left << endl;
 
     // OUTPUT-three sets of data(triangleArea, rectangleArea, and circleArea)
 	cout << setprecision(6);
-    cout << right << setw(TRIANGLE_AREA_COL)  << triangleArea
-                  << setw(RECTANGLE_AREA_COL) << rectangleArea
-                  << setw(CIRCLE_AREA_COL)    << circleArea
-		 << endl;
+        cout << right << setw(TRIANGLE_AREA_COL)  << triangleArea
+                      << setw(RECTANGLE_AREA_COL) << rectangleArea
+                      << setw(CIRCLE_AREA_COL)    << circleArea
+		      << endl;
 
-    cout << setprecision(3);
+        cout << setprecision(3);
 	cout << right << setw(TRIANGLE_AREA_COL)  << triangleArea
-				  << setw(RECTANGLE_AREA_COL) << rectangleArea
-				  << setw(CIRCLE_AREA_COL)    << circleArea
-		 << endl;
+		      << setw(RECTANGLE_AREA_COL) << rectangleArea
+		      << setw(CIRCLE_AREA_COL)    << circleArea
+		      << endl;
 
 	cout << setprecision(3) << showpoint;
 	cout << right << setw(TRIANGLE_AREA_COL)  << triangleArea
-				  << setw(RECTANGLE_AREA_COL) << rectangleArea
-				  << setw(CIRCLE_AREA_COL)    << circleArea
-		 << endl;
+	    	      << setw(RECTANGLE_AREA_COL) << rectangleArea
+		      << setw(CIRCLE_AREA_COL)    << circleArea
+		      << endl;
 
 	cout << setprecision(3) << fixed;
 	cout << right << setw(TRIANGLE_AREA_COL)  << triangleArea
-				  << setw(RECTANGLE_AREA_COL) << rectangleArea
-				  << setw(CIRCLE_AREA_COL)    << circleArea
-		 << endl;
+		      << setw(RECTANGLE_AREA_COL) << rectangleArea
+		      << setw(CIRCLE_AREA_COL)    << circleArea
+		      << endl;
 
 	cout << setprecision(5) << fixed;
 	cout << right << setw(TRIANGLE_AREA_COL)  << triangleArea
-				  << setw(RECTANGLE_AREA_COL) << rectangleArea
-				  << setw(CIRCLE_AREA_COL)    << circleArea;
+		      << setw(RECTANGLE_AREA_COL) << rectangleArea
+		      << setw(CIRCLE_AREA_COL)    << circleArea;
 	return 0;
 }
