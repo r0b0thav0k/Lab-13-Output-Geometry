@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 /****************************************************************************
@@ -66,7 +67,7 @@ int main()
 	 * ----------------------------------------------------------------------
 	 * OUTPUT - USED FOR CLASS HEADING
 	 * ----------------------------------------------------------------------
-	 * PROGRAMMER : Programmer's Name
+ 	 * PROGRAMMER     : Programmer's Name
 	 * CLASS	  : Student's Course
 	 * SECTION	  : Class Days and Times
 	 * LAB_NUM	  : Lab Number (specific to this lab)
@@ -116,15 +117,15 @@ int main()
 
 	/************************************************************************
 	 * INPUT - Set 1: read in 1 set of data each containing:
-	 * 		   triangleHeight, and
-	 * 	  	   triangleBase
+	 * 		  triangleHeight, and
+	 * 	  	  triangleBase
 	 *
-	 * 	  	   Set 2: read in 1 set of data each containing:
-	 * 		   rectangleWidth, and
-	 * 		   rectangleHeight
-	 *
-	 * 		   Set 3: read in 1 set of data containing:
-	 * 		   circleRadius
+ 	 *   	   Set 2: read in 1 set of data each containing:
+	 * 		  rectangleWidth, and
+	 * 		  rectangleHeight
+ 	 *
+ 	 *	   Set 3: read in 1 set of data containing:
+	 *	   	  circleRadius
 	 *
 	 ************************************************************************/
 	// INPUT - Set 1: triangleHeight, and triangleBase
@@ -166,7 +167,7 @@ int main()
 	/************************************************************************
 	 * PROCESSING - Set 3: calculates the area of the circle
 	 ************************************************************************/
-	circleArea = PI * (circleRadius * circleRadius);
+	circleArea = PI * pow(circleRadius, 2);
 
 	/************************************************************************
 	 * OUTPUT - Set 1: output the area of the triangle
